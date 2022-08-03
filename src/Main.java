@@ -1,15 +1,20 @@
-// задание 4
+// задание 5
 public class Main {
     public static void main(String[] args) {
-        int excessWeightKg =7;
-        int excessWeightGr= excessWeightKg*1000;
-        int diet250= 250;
-        int diet500= 500;
-        int weightLoss250= excessWeightGr/diet250;
-        int weightLoss500= excessWeightGr/diet500;
-        System.out.println("Спортсмен похудеет за "+weightLoss250+" дней, при диете на 250гр" );
-        System.out.println("Спортсмен похудеет за "+weightLoss500+" дней, при диете на 500гр" );
-        int totalDays= (weightLoss250+weightLoss500)/2;
-        System.out.println("Может потребоваться "+totalDays+" день в среднем, чтобы добиться результата похудения");
+        int MashaZp =67_760;
+        int DenisZp =83_690;
+        int KristinaZp =76_230;
+        int PovihenieMashiZp =(MashaZp/10)+MashaZp;
+        int PovihenieDenisZp =(DenisZp/10)+DenisZp;
+        int PovihenieKristinaZp =(KristinaZp/10)+KristinaZp;
+        int RasnizaMashiZp =(PovihenieMashiZp*12)-(MashaZp*12);
+        int RasnizaDenisZp =(PovihenieDenisZp*12)-(DenisZp*12);
+        int RasnizaKristinaZp =(PovihenieKristinaZp*12)-(KristinaZp*12);
+
+
+        System.out.println("Маша теперь получает "+PovihenieMashiZp+" рублей в месяц. Годовой доход вырос на "+RasnizaMashiZp +" рублей");
+        System.out.println("Денис теперь получает "+PovihenieDenisZp+" рублей в месяц. Годовой доход вырос на "+RasnizaDenisZp +" рублей");
+        System.out.println("Кристина теперь получает "+PovihenieKristinaZp+" рублей в месяц. Годовой доход вырос на "+RasnizaKristinaZp +" рублей");
+
     }
 }
