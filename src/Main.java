@@ -1,17 +1,15 @@
-// задание 3
+// задание 4
 public class Main {
     public static void main(String[] args) {
-        short banana=80;
-        short milk=105;
-        short iceCream=100;
-        short eggs=70;
-        int bananaSum=banana*5;
-        int milkSum=milk*2;
-        int iceCreamSum=iceCream*2;
-        int eggsSum=eggs*4;
-        int sum=bananaSum+milkSum+iceCreamSum+eggsSum;
-        System.out.println("Сумма продуктов в граммах "+sum+"гр" );
-        float sumKg= (float) (sum*0.001);
-        System.out.println("Сумма продуктов в килограммах "+sumKg+"кг" );
+        int excessWeightKg =7;
+        int excessWeightGr= excessWeightKg*1000;
+        int diet250= 250;
+        int diet500= 500;
+        int weightLoss250= excessWeightGr/diet250;
+        int weightLoss500= excessWeightGr/diet500;
+        System.out.println("Спортсмен похудеет за "+weightLoss250+" дней, при диете на 250гр" );
+        System.out.println("Спортсмен похудеет за "+weightLoss500+" дней, при диете на 500гр" );
+        int totalDays= (weightLoss250+weightLoss500)/2;
+        System.out.println("Может потребоваться "+totalDays+" день в среднем, чтобы добиться результата похудения");
     }
 }
