@@ -1,12 +1,17 @@
-// задание 2
+// задание 3
 public class Main {
     public static void main(String[] args) {
-        //задание номер 2
-        double boxer1=78.2;
-        double boxer2=82.7;
-        double sum=boxer1+boxer2;
-        double sub=boxer2-boxer1;
-        System.out.println("Сумма веса двух боксеров "+sum+"кг" );
-        System.out.println("Разница в весе между двумя боксерами "+sub+"кг");
+        short banana=80;
+        short milk=105;
+        short iceCream=100;
+        short eggs=70;
+        int bananaSum=banana*5;
+        int milkSum=milk*2;
+        int iceCreamSum=iceCream*2;
+        int eggsSum=eggs*4;
+        int sum=bananaSum+milkSum+iceCreamSum+eggsSum;
+        System.out.println("Сумма продуктов в граммах "+sum+"гр" );
+        float sumKg= (float) (sum*0.001);
+        System.out.println("Сумма продуктов в килограммах "+sumKg+"кг" );
     }
 }
